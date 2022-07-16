@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KhanaKajana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Merriweather:ital,wght@1,700&family=Open+Sans:wght@300&family=PT+Sans:ital@1&family=Yellowtail&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+ 
+        body{
+  background-image: url('https://img.freepik.com/free-vector/fast-food-black-background-poster_1284-14589.jpg?w=2000');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 10px;
+            padding: 10px;
+            color:darkorange;
+        }
+
+        .navigation ul li {
+            overflow: hidden;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            padding: 15px;
+            margin: 15px;
+            font-size: 1.75rem;
+            color: burlywood;
+        }
+        .navigation ul li a:hover
+        {
+            font-size: 2rem;
+            color: brown;
+       
+        }
+        ul {
+            position: absolute;
+            top: 5px;
+            right: 100px;
+            display: flex;
+        }
+
+        .box {
+            position: absolute;
+            top: 12px;
+            left: 2px;
+            font-size: 4.25rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+.logo{
+    font-size: 2.5rem;
+  font-weight: bolder;
+  color:#666;
+ position: absolute;
+ left: 228px;
+    top: -6px;
+}
+        main {
+            height: 1000px;
+        }
+
+        .mid {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 350px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section #adress {
+            color: tan;
+            font-size: 2.25rem;
+            font-family: fantasy;
+        }
+
+        section h2 {
+            color: crimson;
+            font-size: 4.5rem;
+            font-family: fantasy;
+        }
+
+        button {
+            background: coral;
+            cursor: pointer;
+        }
+        button :hover{
+           background: none;
+        }
+
+        .box1 img {
+            height: 12rem;
+            width: 12rem;
+            border-radius: 50%;
+            border: 1rem solid #fff;
+            margin-top: -8rem;
+            object-fit: cover;
+        }
+
+        .box1 {
+            text-align: center;
+            padding: 2rem;
+            border: 1rem solid #fff;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+            border-radius: .5rem;
+            flex: 1 1 30rem;
+            background: #333;
+            margin-top: 6rem;
+        }
+
+        .boxcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .box1 h3 {
+            font-size: 3rem;
+            color: #fff;
+            padding: .5rem 0;
+            font-family: cursive;
+        }
+
+        .box1 p {
+            font-size: 1.75rem;
+            color: #eee;
+            padding: 1rem 0;
+            font-family: 'Edu SA Beginner', cursive;;
+        }
+
+        .cr {
+            font-size: 4.0rem;
+            text-align: center;
+            justify-content: center;
+            color: aquamarine;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .last {
+            text-align: center;
+
+        }
+
+        .last h1 {
+            font-size: 4rem;
+            font-family: monospace;
+
+        }
+
+        img {
+            width: 70px;
+            padding: 10px;
+        }
+
+
+        .member .heading {
+            font-size: 2.5rem;
+        }
+
+        .member .row {
+            padding: 2rem;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+            
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            border-radius: .5rem;
+        }
+
+        .member .row .image {
+            flex: 1 1 30rem;
+        }
+
+        .member .row .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: .5rem;
+        }
+
+        .member .row form {
+            flex: 1 1 50rem;
+            padding: 1rem;
+        }
+
+        .member .row form .inputBox {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .member .row form .inputBox input,
+        .member .row form textarea {
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 1.7rem;
+            color: #333;
+            text-transform: none;
+            border: .1rem solid rgba(0, 0, 0, .3);
+            border-radius: .5rem;
+            width: 49%;
+        }
+
+        .member .row form textarea {
+            width: 50%;
+            resize: none;
+            height: 15rem;
+        }
+
+        .member .row form .btn {
+            background: none;
+            position: absolute;
+            left: 40px;
+            top: 230%;
+        }
+
+        .member .row form .btn:hover {
+            background: red;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo"src="https://img.freepik.com/premium-vector/good-food-logo-template_79169-17.jpg?w=2000">
+            <nav class="navigation">
+                <div class="box">KhanaKajana</div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><button>Join now</button></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section class="mid">
+                <h2 class="primary">Welcome To KhanaKajana</h2>
+                <p id="adress">Hariava Para,Buroshib Tala Road,Nabadwip,Nadia</p>
+                <button class="btn">Order Now</button>
+            </section>
+            <section id="customer">
+                <h1 class="cr">
+                    Our Customer Review
+                </h1>
+                <div class="boxcontainer">
+                    <div class="box1">
+                        <img
+                            src="https://www.marismith.com/wp-content/uploads/2014/07/facebook-profile-blank-face.jpeg">
+                        <h3>Sayan Barik</h3>
+
+                        <p id="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dignissimos
+                            doloribus enim amet, aliquid totam ullam dolorum neque fuga et nulla! Alias itaque
+                            cupiditate
+                            molestiae, illum cumque quas, eius harum autem iure non eligendi!
+                        </p>
+                    </div>
+
+                    <div class="box1">
+
+                        <img
+                            src="https://www.marismith.com/wp-content/uploads/2014/07/facebook-profile-blank-face.jpeg">
+                        <h3>Abhinaba Paul</h3>
+
+                        <p id="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dignissimos
+                            doloribus enim amet, aliquid totam ullam dolorum neque fuga et nulla! Alias itaque
+                            cupiditate
+                            molestiae, illum cumque quas, eius harum autem iure non eligendi!
+                        </p>
+                    </div>
+
+                    <div class="box1">
+
+                        <img
+                            src="https://www.marismith.com/wp-content/uploads/2014/07/facebook-profile-blank-face.jpeg">
+                        <h3>Priyojit Kundu</h3>
+
+                        <p id="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dignissimos
+                            doloribus enim amet, aliquid totam ullam dolorum neque fuga et nulla! Alias itaque
+                            cupiditate
+                            molestiae, illum cumque quas, eius harum autem iure non eligendi!
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="member" id="Membership">
+
+            <h1 class="heading">Getting Membership Now </h1>
+
+            <div class="row">
+
+                <form action="">
+
+                    <div class="inputBox">
+                        <input type="first name" placeholder="First Name">
+                        <input type="Last name" placeholder="Last Name">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="Email" placeholder="Email-id">
+                        <input type="Phone" placeholder="Phone NO">
+                    </div>
+
+                    <textarea placeholder="Address" name=""></textarea>
+
+                    <input type="submit" value="Membership now" class="btn">
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <footer class="last">
+            <h1>Follow Us On </h1>
+            <div class="footer">
+                <img src="https://image.similarpng.com/very-thumbnail/2020/04/Black-icon-facebook-logo-PNG.png"
+                    alt="blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="blank">
+                <img src="https://www.pngfind.com/pngs/m/60-606541_png-file-twitter-transparent-png.png" alt="blank">
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
